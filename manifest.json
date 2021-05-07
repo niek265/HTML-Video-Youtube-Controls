@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "HTML Video Youtube Controls",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "description": "Use the Youtube keyboard controls on any HTML video player.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/*"
+      ],
+      "js": ["jquery-3.6.0.min.js", "content.js"]
+    }
+  ]
+}
